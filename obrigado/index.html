@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4d125",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#0F172A",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-slate-100 font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-800 px-6 md:px-40 py-5 bg-background-dark/95 backdrop-blur-sm sticky top-0 z-50">
+<div class="flex items-center gap-4 text-slate-100">
+<div class="size-8 flex items-center justify-center bg-primary rounded-lg text-background-dark">
+<span class="material-symbols-outlined font-bold" style="">balance</span>
+</div>
+<h2 class="text-slate-100 text-xl font-bold leading-tight tracking-[-0.015em]" style="">SOLAR<font color="#f4d125">SEM</font>RISCO</h2>
+</div>
+<div class="flex flex-1 justify-end gap-4 items-center">
+<div class="hidden md:flex items-center gap-2 text-slate-400 text-sm font-medium" style="">
+<span class="material-symbols-outlined text-primary text-lg" style="">verified_user</span>
+                        Ambiente Seguro
+                    </div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center justify-center px-4 py-12 md:py-20 max-w-4xl mx-auto w-full">
+<!-- Success Icon -->
+<div class="mb-8 flex items-center justify-center">
+<div class="rounded-full bg-primary/10 p-6 ring-4 ring-primary/20">
+<span class="material-symbols-outlined text-primary text-7xl md:text-8xl" style="">check_circle</span>
+</div>
+</div>
+<!-- Main Content -->
+<div class="text-center space-y-6 mb-12">
+<h1 class="text-slate-100 text-3xl md:text-5xl font-black leading-tight tracking-[-0.033em]" style="">
+                        Recebemos seu pedido de consulta!
+                    </h1>
+<p class="text-slate-400 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto" style="">
+                        Obrigado por confiar na nossa assessoria jurídica especializada. Em breve, um de nossos especialistas entrará em contato via WhatsApp ou e-mail para confirmar seu horário.
+                    </p>
+</div>
+<!-- WhatsApp Card -->
+<div class="w-full max-w-2xl bg-slate-800/50 border border-slate-700 rounded-2xl p-6 md:p-8 mb-10 text-center md:text-left">
+<div class="flex flex-col md:flex-row items-center gap-6">
+<div class="hidden md:block w-24 h-24 bg-primary/10 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl" style="">rocket_launch</span>
+</div>
+<div class="flex-1">
+<p class="text-slate-100 text-lg font-bold mb-2" style="">Atendimento Prioritário</p>
+<p class="text-slate-400 text-base leading-normal" style="">
+                                Enquanto isso, você pode nos chamar diretamente no WhatsApp para agilizar o seu atendimento:
+                            </p>
+</div>
+</div>
+</div>
+<!-- CTA Button -->
+<div class="w-full max-w-md">
+<a class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-16 px-6 bg-primary text-background-dark gap-3 hover:scale-[1.02] transition-transform duration-200" href="https://wa.me/5511949817165" style="" target="_blank">
+<span class="material-symbols-outlined text-2xl font-bold" style="">chat</span>
+<span class="truncate text-lg font-black tracking-wide" style="">FALAR COM ESPECIALISTA AGORA</span>
+</a>
+<p class="text-center text-slate-500 text-xs mt-4 uppercase tracking-widest font-bold" style="">Resposta em até 24h úteis</p>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-20 border-t border-slate-800 pt-12">
+<div class="flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" style="">gavel</span>
+<div>
+<p class="text-slate-100 font-bold text-sm uppercase" style="">Advocacia Especializada</p>
+<p class="text-slate-500 text-xs mt-1" style="">Foco exclusivo em energia solar</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" style="">shield_lock</span>
+<div>
+<p class="text-slate-100 font-bold text-sm uppercase" style="">Dados Protegidos</p>
+<p class="text-slate-500 text-xs mt-1" style="">Conformidade total com a LGPD</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" style="">schedule</span>
+<div>
+<p class="text-slate-100 font-bold text-sm uppercase" style="">Resposta em até 24h</p>
+<p class="text-slate-500 text-xs mt-1" style="">Agilidade no seu processo</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-background-dark border-t border-slate-800 px-6 md:px-40 py-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-3 opacity-60">
+<div class="size-6 flex items-center justify-center bg-slate-700 rounded text-slate-300">
+<span class="material-symbols-outlined text-sm font-bold" style="">balance</span>
+</div>
+<span class="text-slate-400 font-bold text-sm" style="">Solar em Risco © 2024</span>
+</div>
+<div class="flex gap-6 text-slate-500 text-sm">
+<a class="hover:text-primary transition-colors" href="#" style="">Termos de Uso</a>
+<a class="hover:text-primary transition-colors" href="#" style="">Política de Privacidade</a>
+</div>
+<div class="text-slate-600 text-xs" style="">
+                        Todos os direitos reservados.
+                    </div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
