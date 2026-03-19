@@ -493,3 +493,81 @@ width="55">
 
 </a>
 </body></html>
+xt-white transition-colors" href="#" style="">Privacidade</a></li>
+<li class="" style=""><a class="text-[#94a3b8] text-sm hover:text-white transition-colors" href="#" style="">OAB/SP Jurídico Digital</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[13px] text-[#475569]">
+<span class="" style="">© 2026 Solar Sem Risco. Todos os direitos reservados.</span>
+<div class="flex items-center gap-6">
+<a class="text-[#94a3b8] hover:text-white transition-colors" href="#" style="">LinkedIn</a>
+<a class="text-[#94a3b8] hover:text-white transition-colors" href="#" style="">Instagram</a>
+<a class="text-[#94a3b8] hover:text-white transition-colors" href="#" style="">WhatsApp</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    (function () {
+      const pad = n => String(n).padStart(2, '0');
+      const end = Date.now() + (14 * 3600 + 48 * 60 + 12) * 1000;
+      function tick() {
+        const now = Date.now();
+        const diff = Math.max(0, Math.floor((end - now) / 1000));
+        const days = Math.floor(diff / 86400);
+        const hrs = Math.floor((diff % 86400) / 3600);
+        const mins = Math.floor((diff % 3600) / 60);
+        const secs = diff % 60;
+        const dEl = document.getElementById('cd-d');
+        const hEl = document.getElementById('cd-h');
+        const mEl = document.getElementById('cd-m');
+        const sEl = document.getElementById('cd-s');
+        if(dEl) dEl.textContent = pad(days);
+        if(hEl) hEl.textContent = pad(hrs);
+        if(mEl) mEl.textContent = pad(mins);
+        if(sEl) sEl.textContent = pad(secs);
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+    const phoneInput = document.getElementById('whatsapp-input');
+    if (phoneInput) {
+      phoneInput.addEventListener('input', function (e) {
+        let x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,5})(\d{0,4})/);
+        e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+      });
+    }
+</script>
+<a id="whatsapp-btn" href="https://wa.me/5511949817165?text=Olá%20vim%20do%20site%20e%20gostaria%20de%20mais%20informações"
+target="_blank"
+class="hidden md:block"
+style="position:fixed; bottom:20px; right:20px; z-index:999;">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+width="55">
+
+</a>
+<div id="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button onclick="confirmarFechar()" style="position:absolute;top:14px;right:16px;background:none;border:none;color:#94a3b8;font-size:22px;cursor:pointer;line-height:1;">&times;</button>
+    <div id="modal-confirmar" style="display:none;text-align:center;padding:1rem 0;"><p style="font-size:16px;color:#fff;font-weight:600;margin-bottom:8px;">Tem certeza que deseja sair?</p><p style="font-size:13px;color:#94a3b8;margin-bottom:1.5rem;">Restam apenas <strong style="color:#f4d125;">3 vagas</strong> para consultoria gratuita este mês.</p><button onclick="fecharModal()" style="background:transparent;border:1px solid #475569;color:#94a3b8;padding:10px 24px;border-radius:12px;cursor:pointer;font-size:13px;margin-right:8px;">Sair mesmo assim</button><button onclick="voltarForm()" style="background:#f4d125;border:none;color:#0F172A;padding:10px 24px;border-radius:12px;cursor:pointer;font-size:13px;font-weight:700;">Quero minha vaga</button></div><div id="modal-form-content">
+      <div class="inline-block bg-[#f4d125] text-[#0F172A] text-[11px] font-extrabold uppercase tracking-widest px-3 py-1 rounded-full mb-5">Consultoria Gratuita</div>
+      <h3 style="font-family:'Montserrat',sans-serif;font-size:22px;font-weight:800;color:#fff;margin-bottom:6px;line-height:1.2;">Antes de sair, garanta sua vaga</h3>
+      <p style="font-size:13px;color:#94a3b8;margin-bottom:1.5rem;">Preencha abaixo e um advogado entra em contato pelo WhatsApp.</p>
+      <div class="modal-campo"><label>Nome completo</label><input id="m-nome" type="text" placeholder="Seu nome" class="fi w-full bg-[#0F172A]/80 border border-white/10 rounded-2xl p-4 text-base text-white placeholder-[#475569] outline-none focus:border-[#f4d125] transition-all" /><span id="m-err-nome" style="display:none;font-size:12px;color:#ff3b3b;">Campo obrigatório</span></div>
+      <div class="modal-campo"><label>WhatsApp</label><input id="m-tel" type="tel" placeholder="(00) 00000-0000" class="fi w-full bg-[#0F172A]/80 border border-white/10 rounded-2xl p-4 text-base text-white placeholder-[#475569] outline-none focus:border-[#f4d125] transition-all" /><span id="m-err-tel" style="display:none;font-size:12px;color:#ff3b3b;">Campo obrigatório</span></div>
+      <div class="modal-campo"><label>E-mail</label><input id="m-email" type="email" placeholder="seu@email.com" class="fi w-full bg-[#0F172A]/80 border border-white/10 rounded-2xl p-4 text-base text-white placeholder-[#475569] outline-none focus:border-[#f4d125] transition-all" /><span id="m-err-email" style="display:none;font-size:12px;color:#ff3b3b;">Campo obrigatório</span></div>
+      <div class="modal-campo"><label>Valor do investimento</label><select id="m-valor" class="fi w-full bg-[#0F172A]/80 border border-white/10 rounded-2xl p-4 text-base text-white cursor-pointer outline-none focus:border-[#f4d125] transition-all pr-12"><option value="" disabled selected>Selecione...</option><option>Até R$ 20.000</option><option>R$ 20.000 a R$ 50.000</option><option>R$ 50.000 a R$ 100.000</option><option>Acima de R$ 100.000</option></select><span id="m-err-valor" style="display:none;font-size:12px;color:#ff3b3b;">Selecione uma opção</span></div>
+      <button onclick="enviarModal()" style="width:100%;background:#f4d125;color:#0F172A;font-weight:800;font-size:15px;padding:14px;border:none;border-radius:16px;cursor:pointer;text-transform:uppercase;letter-spacing:0.05em;margin-top:8px;">QUERO MINHA AVALIAÇÃO GRATUITA</button>
+      <p style="font-size:11px;color:#475569;text-align:center;margin-top:12px;">🔒 Seus dados são protegidos pela LGPD</p>
+    </div>
+    <div id="modal-sucesso" style="display:none;text-align:center;padding:1rem 0;">
+      <div style="font-size:48px;margin-bottom:1rem;">✅</div>
+      <h3 style="font-family:'Montserrat',sans-serif;font-size:20px;font-weight:800;color:#fff;margin-bottom:8px;">Vaga garantida!</h3>
+      <p style="font-size:14px;color:#94a3b8;">Nossa equipe já recebeu sua solicitação e entrará em contato em breve.</p>
+    </div>
+  </div>
+</div>
+
+</body></html>
